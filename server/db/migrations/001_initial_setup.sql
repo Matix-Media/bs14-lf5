@@ -1,3 +1,13 @@
+/*
+
+We created our database with a slightly altered sql script. We removed the selection of the database, as our connection already specified which database to use and switched from auto_increment to serial.
+
+DROP DATABASE IF EXISTS krautundrueben;
+CREATE DATABASE IF NOT EXISTS krautundrueben;
+USE krautundrueben;
+
+*/
+
 CREATE TABLE
     KUNDE (
         KUNDENNR INTEGER NOT NULL,

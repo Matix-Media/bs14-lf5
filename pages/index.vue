@@ -1,3 +1,3 @@
-<div>
-    Tet
-</div>
+<template>
+    <div>Test</div>
+</template>

@@ -19,7 +19,12 @@ logs
 .idea
 
 # Local env files
+# Environment Files
+.env
+.env.local
+.env.*
 !.env.example
+!.env.template
 
 # env files
 .env

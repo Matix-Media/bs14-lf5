@@ -13,7 +13,7 @@ Details:
    - Facilitates efficient querying of ingredients based on their nutritional categories.
 */
 
-CREATE TABLE zutat_kategorie (
+CREATE TABLE zutatkategorie (
     zutatennr INT NOT NULL,
     kategorienr INT NOT NULL,
     PRIMARY KEY (zutatennr, kategorienr),

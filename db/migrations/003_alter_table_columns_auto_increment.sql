@@ -30,17 +30,17 @@ ALTER TABLE zutat
 SELECT SETVAL(
                (SELECT pg_get_serial_sequence('kunde', 'kundennr')),
                (SELECT max(kundennr) FROM kunde),
-               true
+               TRUE
        );
 
 SELECT SETVAL(
                (SELECT pg_get_serial_sequence('lieferant', 'lieferantennr')),
                (SELECT max(lieferantennr) FROM lieferant),
-               true
+               TRUE
        );
 
 SELECT SETVAL(
                (SELECT pg_get_serial_sequence('zutat', 'zutatennr')),
                (SELECT max(zutatennr) FROM zutat),
-               true
+               TRUE
        );

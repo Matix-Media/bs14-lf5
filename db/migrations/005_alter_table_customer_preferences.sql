@@ -14,6 +14,6 @@ Key Features:
 - Enhances table usability by supporting compliance tracking.
 */
 
-alter table kunde add column datenschutzeinwilligung boolean default false,
-                  add column letzteaktualisierung date;
+ALTER TABLE kunde ADD COLUMN datenschutzeinwilligung BOOLEAN DEFAULT FALSE,
+                  ADD COLUMN letzteaktualisierung DATE;
 

@@ -21,29 +21,28 @@ Key Features:
 - Auto-incrementing primary keys ensure smooth insertion of new records.
 - Foreign key constraints enforce data integrity between related tables.
 */
-
-create table rezept (
-    rezeptnr integer primary key generated always as identity,
-    name varchar(100) not null,
-    beschreibung text,
-    portionen integer,
-    schwierigkeitsgrad varchar(20),
-    zubereitungszeit integer,
-    erstelltam timestamp default current_timestamp
+CREATE TABLE rezept (
+    rezeptnr INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100) NOT NULL,
+    beschreibung TEXT,
+    portionen INTEGER,
+    schwierigkeitsgrad VARCHAR(20),
+    zubereitungszeit INTEGER,
+    erstelltam TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-create table rezeptzutat (
-    rezeptnr integer,
-    zutatennr integer,
-    menge integer,
-    einheit varchar(25),
-    primary key (rezeptnr, zutatennr),
-    foreign key (rezeptnr) references rezept(rezeptnr),
-    foreign key (zutatennr) references zutat(zutatennr)
+CREATE TABLE rezeptzutat (
+    rezeptnr INTEGER,
+    zutatennr INTEGER,
+    menge INTEGER,
+    einheit VARCHAR(25),
+    PRIMARY KEY (rezeptnr, zutatennr),
+    FOREIGN KEY (rezeptnr) REFERENCES rezept(rezeptnr),
+    FOREIGN KEY (zutatennr) REFERENCES zutat(zutatennr)
 );
 
-create table ernaehrungskategorie (
-    kategorienr integer primary key generated always as identity,
-    name varchar(50) not null,
-    beschreibung text
+CREATE TABLE ernaehrungskategorie (
+    kategorienr INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(50) NOT NULL,
+    beschreibung TEXT
 );

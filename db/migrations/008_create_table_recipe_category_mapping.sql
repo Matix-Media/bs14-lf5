@@ -14,10 +14,10 @@ Purpose:
 */
 
 
-create table rezeptkategorie(
-                                rezeptnr integer,
-                                kategorienr integer,
-                                primary key (rezeptnr, kategorienr),
-                                foreign key (rezeptnr) references rezept(rezeptnr),
-                                foreign key (kategorienr) references ernaehrungskategorie(kategorienr)
+CREATE TABLE REZEPTKATEGORIE(
+    rezeptnr INTEGER,
+    kategorienr INTEGER,
+    PRIMARY KEY (rezeptnr, kategorienr),
+    FOREIGN KEY (rezeptnr) REFERENCES rezept(rezeptnr),
+    FOREIGN KEY (kategorienr) REFERENCES ernaehrungskategorie(kategorienr)
 );

@@ -14,7 +14,7 @@ Purpose:
 */
 
 
-CREATE TABLE REZEPTKATEGORIE(
+CREATE TABLE rezeptkategorie(
     rezeptnr INTEGER,
     kategorienr INTEGER,
     PRIMARY KEY (rezeptnr, kategorienr),

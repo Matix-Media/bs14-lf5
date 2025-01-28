@@ -22,4 +22,5 @@ INSERT INTO ERNAEHRUNGSKATEGORIE (NAME, BESCHREIBUNG) VALUES
                                                           ('Vegetarisch', 'Vegetarische Produkte'),
                                                           ('Glutenfrei', 'Glutenfreie Produkte'),
                                                           ('Low-Carb', 'Low-Carb'),
+                                                          ('Bio', 'Bio'),
                                                           ('Protein-Reich', 'Proteinreiche Produkte');
